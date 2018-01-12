@@ -7,4 +7,4 @@ some snippet of functional programming
    * fine-grained control
    
 ### Too many parameters:
-* **raise the abstration** : Monad
+* **raise the abstration** : Monad **(Category Theory)**
