@@ -5,3 +5,6 @@ some snippet of functional programming
    * no side effects
    * type-safe
    * fine-grained control
+   
+### Too many parameters:
+* ** raise the abstration ** : Monad
