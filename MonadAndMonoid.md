@@ -12,7 +12,8 @@ trait Monad[M[_]] {  
   def flatMap[U,V](m: M[U])(f: U =>M[V]): M[V]
 }
 ```
-A monad abstraction consists of the following three elements:                                                   A type constructor, M[A], expressed in Scala as trait M[A] or case class M[A] or class M[A].                                                   A unit method that lifts a computation into the monad. In Scala, you use the invocation of the class constructor for this purpose.                                                   A bind method, which sequences computations. In Scala, flatMap is the bind.
+* A monad abstraction consists of the following three elements:
+  * A type constructor, M[A], expressed in Scala as trait M[A] or case class M[A] or class M[A].                                             * A unit method that lifts a computation into the monad. In Scala, you use the invocation of the class constructor for this purpose.       * A bind method, which sequences computations. In Scala, flatMap is the bind.
 Try is a monad as defined in the Scala standard library.[4] Try implements flatMap, which allows the sequencing of effects that we just discussed. Using the compositional power of Try, you can define operations composed from primitive ones, as you’ll see shortly when you implement a transfer operation from debit and credit.
 
 
