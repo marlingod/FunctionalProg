@@ -16,3 +16,4 @@ https://bartoszmilewski.com/2015/01/20/functors/
 Functional and Reactive Domain Modeling
 
 Scala for Machine Learning - Second Edition
+
